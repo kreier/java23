@@ -12,6 +12,7 @@ public class ScannerExample {
         System.out.print("What's your age? ");
         in = new Scanner(System.in);
         age = in.nextInt();
+        in.nextLine();                      // this needs to be done because of the scannerbug!!
         System.out.println("Thank you for answering " + age + ". It will be used in the next example. ");
         in.close();
     }
